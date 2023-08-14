@@ -7,8 +7,8 @@ from slack_bolt.adapter.socket_mode import SocketModeHandler
 logging.basicConfig(level=logging.INFO)
 load_dotenv()
 
-SLACK_BOT_TOKEN = os.environ["Utility_App_Bot_User_OAuth_Token"]
-SLACK_APP_TOKEN = os.environ["Utility_App_Socket_Mode_Token"]
+SLACK_BOT_TOKEN = os.environ["Basic_Slack_App_Bot_User_OAuth_Token"]
+SLACK_APP_TOKEN = os.environ["Basic_Slack_App_Socket_Mode_Token"]
 
 app = App(token=SLACK_BOT_TOKEN)
 
