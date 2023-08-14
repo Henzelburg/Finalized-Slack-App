@@ -14,7 +14,7 @@ app = App(token=SLACK_BOT_TOKEN)
 
 @app.event("app_mention")
 def mention_handler(body, context, payload, options, say, event):
-    say("Hello World")
+    say("Hello World!")
 
 @app.event("message")
 def message_handler(body, context, payload, options, say, event):
